@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+/* 
+font-family: 'Montserrat', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* NAVBAR */
+.nav-container {
+    width: 100%;
+    height: 60px;
+    background-color: #2b6777 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.li-container li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+}
+
+.logo-container h1 {
+    font-size: 1.5em;
+}
+
+/* NAVBAR */
+
+
+/* ERROR 404 */
+.container-error404 {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.row-404 {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.row-1 h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+.row-1 p {
+    font-size: 2.2em; 
+    text-align: center;
+}
+/* ERROR 404 */
+
+
+/* Agenda intro */
+
+.row-2 {
+    width: 100%;
+    text-align: center;
+    margin: 2em 0;
+}
+
+.row-2 h1 {
+    font-size: 3em;
+     
+}
+
+.row-2 p {
+    font-size: 1.8em;
+}
+
+/* Agenda intro */
+
+
+/* Error message */
+
+
+.error-message{
+    max-width: 620px;
+    padding: 15px;
+    background-color: #f44336;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+/* Error message */
+
+
+/* Tabela de contatos */
+.table-contacts {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 15px;
+    font-size: 1.5em;
+  }
+  
+
+/* Tabela de contatos */
