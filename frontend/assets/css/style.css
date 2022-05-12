@@ -88,20 +88,29 @@ ul {
 /* Agenda intro */
 
 
-/* Error message */
+/* Error message success */
 
 
 .error-message{
     max-width: 620px;
     padding: 15px;
-    background-color: #f44336;
+    background-color: #f44336b8;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.success-message{
+    max-width: 620px;
+    padding: 15px;
+    background-color: rgba(0, 255, 0, 0.696);
     border-radius: 8px;
     text-align: center;
     margin: 20px auto;
 }
 
 
-/* Error message */
+/* Error message success*/
 
 
 /* Tabela de contatos */
