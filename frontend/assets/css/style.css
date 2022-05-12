@@ -9,6 +9,8 @@ font-family: 'Montserrat', sans-serif; */
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
 /* NAVBAR */
 .nav-container {
     width: 100%;
@@ -18,6 +20,11 @@ font-family: 'Montserrat', sans-serif; */
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 ul {
@@ -116,3 +123,40 @@ td, th {
   
 
 /* Tabela de contatos */
+
+/* login - cadastro */
+.row-3 {
+    display: flex;
+    justify-content: space-evenly ;
+    gap: 2em;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+form input {
+    border-radius: 5px;
+    padding: 4px;
+    margin-bottom: 8px;
+    border: 1px solid black;
+}
+
+form button {
+    width: auto;
+    padding: 12px;
+    background-color: blue;
+    border-radius: 12px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+/* login - cadastro */
