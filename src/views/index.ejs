@@ -14,17 +14,27 @@
     <% if(contatos.length > 0) { %>
     <div class="table-contacts">
         <table>
-            <% contatos.forEach(contato => { %>
+            <thead>
+                <tr>
+                    <th>Nome</td>
+                    <th>Sobrenome</td>
+                    <th>Telefone</td>
+                    <th>Email</td>
+                    <th colspan="2">Configurações</td>    
+                </tr>
+            </thead>
+            <tbody>
+        <% contatos.forEach(contato => { %>
                 <tr>
                     <td><%= contato.nome %></td>
                     <td><%= contato.sobrenome %></td>
                     <td><%= contato.telefone %></td>
                     <td><%= contato.email %></td>
-                    <td><a href="/contato/index/<%= contato._id %>">Editar</a></td>
-                    <td><a href="/contato/delete/<%= contato._id %>">Deletar</a></td>
+                    <td class="editar"><a href="/contato/index/<%= contato._id %>">Editar</a></td>
+                    <td class="deletar"><a href="/contato/delete/<%= contato._id %>">Deletar</a></td>
                 </tr>
-            <% }); %>
-
+        <% }); %>
+            </tbody>
         </table>
     </div>
     <% } else { %>

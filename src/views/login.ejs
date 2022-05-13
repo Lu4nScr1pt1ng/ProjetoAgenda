@@ -13,7 +13,7 @@
                 <h2>Faça login</h2>
                 <p>Já tem uma conta? Efetue login para modificar os contatos</p>
                 <div class="login-container-form">
-                    <form action="/login/login" method="POST">
+                    <form action="/login/login" class="form-cadastro" method="POST">
                         <input type="hidden" name="_csrf" value="<%= csrfToken %>">
                         <label for="email-login">Seu e-mail</label>
                         <input type="email" id="email-login" name="email">
@@ -27,7 +27,7 @@
                 <h2>Crie sua conta</h2>
                 <p>Se você não tem uma conta, preencha o formulario</p>
                 <div class="register-container-form">
-                    <form action="/login/register" method="POST">
+                    <form action="/login/register" class="form-cadastro" method="POST">
                         <input type="hidden" name="_csrf" value="<%= csrfToken %>">
                         <label for="email-login">Seu e-mail</label>
                         <input type="email" id="email-login" name="email">
