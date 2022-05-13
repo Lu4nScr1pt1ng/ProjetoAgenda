@@ -1,0 +1,17 @@
+<%- include('includes/head.ejs') %>
+<%- include('includes/nav.ejs') %>
+
+<div class="container-agenda">
+    <div class="row-agenda">
+        <div class="row-2">
+            <h1>Olá <%= user.email %></h1>
+            <p>Seja bem vindo ao site</p>
+        </div>
+        <%- include('includes/messages'); %>
+
+    </div>
+
+</div>
+<script src="../assets/js/bundle.js"></script>
+  
+<%- include('includes/footer.ejs') %>

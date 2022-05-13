@@ -1,0 +1,36 @@
+<%- include('includes/head.ejs') %>
+<%- include('includes/nav.ejs') %>
+
+<div class="container-agenda">
+    <div class="row-agenda">
+        <div class="row-2">
+            <h1>Contato</h1>
+            <p>Criar ou editar contato abaixo</p>
+
+        </div>
+    </div>
+    <%- include('includes/messages') %>
+    </div>
+
+    <% if(contato._id) { %>
+    <form action="/contato/edit/<%= contato._id %>" method="POST">
+    <% } else { %>
+    <form action="/contato/register" method="POST">    
+    <% } %>
+        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+        <label>Nome</label>
+        <input value="<%= contato.nome %>" type="type" name="nome">
+        <label>Sobrenome</label>
+        <input value="<%= contato.sobrenome %>" type="type" name="sobrenome">
+        <label>E-mail</label>
+        <input value="<%= contato.email %>" type="email" name="email">
+        <label>Telefone</label>
+        <input value="<%= contato.telefone %>" type="type" name="telefone">
+        <button>Salvar</button>
+    </form>
+
+</div>
+
+<script src="../assets/js/bundle.js"></script>
+  
+<%- include('includes/footer.ejs') %>

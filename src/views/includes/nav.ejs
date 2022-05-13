@@ -4,7 +4,12 @@
     </div>
     <div class="ul-nav-container">
         <ul class="li-container">
-            <li><a href="#">Registrar</a></li>
+            <li><a href="/contato/index">Cadastrar contato</a></li>
+            <% if(user) { %>
+            <li><a href="/login/logout">Sair</a></li>
+            <% } else { %>
+            <li><a href="/login/index">Entrar</a></li>
+            <% } %>
         </ul>
     </div>
 </nav>
